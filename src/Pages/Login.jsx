@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
-    <div className="w-full min-h-screen bg-[url('./login.jpg')] bg-cover bg-center flex justify-center items-center">
+    <div className="w-full min-h-screen bg-[url('/login.jpg')] bg-cover bg-center flex justify-center items-center">
       <form className="md:w-[420px] w-[350px] bg-white/30 backdrop-blur-lg p-10 rounded-2xl mt-20">
                 <h1 className="text-center font-bold text-3xl mb-5 text-[#000b4d]">Welcome Back!</h1>
 
