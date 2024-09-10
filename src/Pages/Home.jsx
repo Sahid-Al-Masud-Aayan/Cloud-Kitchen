@@ -35,7 +35,8 @@ const Home = () => {
 
   return (
     <>
-     <div className="w-full h-[729px] bg-[url('./banner.jpg')] bg-cover bg-center flex justify-center items-center">
+    
+     <div className="w-full h-[729px] bg-[url('/banner.jpg')] bg-cover bg-center flex justify-center items-center">
      <div className="flex justify-center items-center flex-col">
         <h1 className='text-7xl text-white uppercase font-bold'>Unforgettable Dishes,</h1>
         <h1 className='text-7xl text-white uppercase font-bold mt-6'>Unforgettable <span className='text-red-600'>Memories</span></h1>
@@ -45,7 +46,7 @@ const Home = () => {
         </Link>
      </div>
      </div>
-     <div className="w-full h-[670px] bg-[url('./banner2.jpg')] bg-cover bg-center flex justify-center items-center">
+     <div className="w-full h-[670px] bg-[url('/banner2.jpg')] bg-cover bg-center flex justify-center items-center">
         <div className="flex justify-center items-center gap-7">
             <div className="flex justify-center items-center gap-3 flex-col">
             <div className="flex justify-center items-center gap-3">
@@ -99,21 +100,21 @@ const Home = () => {
   {/* Navigation buttons */}
   <button
     onClick={prevSlide}
-    className="absolute left-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-full bg-white/80 duration-200"
+    className="absolute left-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-fullbg-white/80 duration-200"
     disabled={currentIndex === 0}
   >
     <FcPrevious className='text-black text-xl' />
   </button>
   <button
     onClick={nextSlide}
-    className="absolute right-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-full bg-white/80 duration-200"
+    className="absolute right-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-fullbg-white/80 duration-200"
     disabled={currentIndex + imagesPerRow >= totalImages}
   >
     <FcNext className='text-black text-xl' />
   </button>
 </div>
      </div>
-     <div className="w-full h-[660px] bg-[url('./banner3.jpg')] bg-cover bg-center flex justify-center items-center">
+     <div className="w-full h-[660px] bg-[url('/banner3.jpg')] bg-cover bg-center flex justify-center items-center">
      <div className="flex justify-center items-center flex-col w-[900px] bg-orange-500  h-[400px] rounded-3xl shadow-2xl">
      <h2 className='text-5xl font-bold text-blue-900'><span className='text-red-700'>Savor </span>an unforgettable experience</h2>
      <p className='text-xl w-[851px] font-medium text-white text-center mt-5'>
