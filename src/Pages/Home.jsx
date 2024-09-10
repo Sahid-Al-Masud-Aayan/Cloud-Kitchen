@@ -100,14 +100,14 @@ const Home = () => {
   {/* Navigation buttons */}
   <button
     onClick={prevSlide}
-    className="absolute left-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-fullbg-white/80 duration-200"
+    className="absolute left-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-full bg-white/80 duration-200"
     disabled={currentIndex === 0}
   >
     <FcPrevious className='text-black text-xl' />
   </button>
   <button
     onClick={nextSlide}
-    className="absolute right-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-fullbg-white/80 duration-200"
+    className="absolute right-[-5%] top-1/2 transform -translate-y-1/2 px-2 py-2 rounded-full bg-white/80 duration-200"
     disabled={currentIndex + imagesPerRow >= totalImages}
   >
     <FcNext className='text-black text-xl' />
