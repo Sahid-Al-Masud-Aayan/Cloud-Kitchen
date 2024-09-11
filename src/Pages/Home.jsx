@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MdArrowOutward } from "react-icons/md";
 import { FcNext, FcPrevious } from 'react-icons/fc';
-import { FaRegIdBadge } from 'react-icons/fa6';
+import { FaUtensils, FaTruck, FaRegSmile } from 'react-icons/fa';
 import { IoLogInOutline } from 'react-icons/io5';
 
 const Home = () => {
@@ -115,16 +115,39 @@ const Home = () => {
 </div>
      </div>
      <div className="w-full h-[660px] bg-[url('/banner3.jpg')] bg-cover bg-center flex justify-center items-center">
-     <div className="flex justify-center items-center flex-col w-[900px] bg-orange-500  h-[400px] rounded-3xl shadow-2xl">
-     <h2 className='text-5xl font-bold text-blue-900'><span className='text-red-700'>Savor </span>an unforgettable experience</h2>
-     <p className='text-xl w-[851px] font-medium text-white text-center mt-5'>
-     Whether you're craving a delightful meal or planning a special occasion, we are here to make every moment memorable. Visit us today or place your order online to savor the finest dishes, crafted with love and fresh ingredients.
-            </p>
-        <Link className='w-[360px] h-[60px] rounded-full mt-10 bg-black/70 hover:backdrop-blur-lg gap-2 hover:bg-blue-900 duration-150 flex justify-center items-center text-white text-2xl font-medium active:scale-90'>
-        Register today
-        <IoLogInOutline className='text-4xl'/>
-        </Link>
-     </div>
+     <div className="">
+     <h2 className='text-5xl font-bold text-blue-900 text-center mb-3'>Why<span className='text-red-800'>Choose</span>  us?</h2>
+      <p className="text-center text-xl mb-12 font-medium text-gray-200">We provide the best dining experience for our customers</p>
+      
+      <div className="flex justify-around items-center gap-10 mx-auto">
+        {/* First Icon and Subheading */}
+        <div className="text-center">
+          <div className="bg-red-100 p-6 w-[300px] rounded-lg hover:scale-105 duration-200 hover:shadow-2xl">
+            <FaUtensils className="text-5xl text-red-500 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Delicious Food</h3>
+            <p className="text-gray-600 mt-2">Our dishes are made with fresh ingredients and authentic recipes.</p>
+          </div>
+        </div>
+        
+        {/* Second Icon and Subheading */}
+        <div className="text-center">
+          <div className="bg-green-100 p-6 w-[300px] rounded-lg hover:scale-105 duration-200 hover:shadow-2xl">
+            <FaTruck className="text-5xl text-green-500 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Fast Delivery</h3>
+            <p className="text-gray-600 mt-2">Quick and reliable delivery right to your doorstep.</p>
+          </div>
+        </div>
+        
+        {/* Third Icon and Subheading */}
+        <div className="text-center">
+          <div className="bg-yellow-100 p-6 w-[300px] rounded-lg hover:scale-105 duration-200 hover:shadow-2xl">
+            <FaRegSmile className="text-5xl text-yellow-500 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Friendly Service</h3>
+            <p className="text-gray-600 mt-2">Our team is dedicated to providing a pleasant dining experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
      </div>
     </>
   )
